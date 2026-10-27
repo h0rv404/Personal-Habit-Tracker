@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bitácora diaria</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Bitácora · Tu progreso, a tu ritmo</title>
 <style>
 :root{
   --paper:#F7F7F3;
@@ -264,6 +261,22 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
 .recbar-elapsed{flex-basis:100%;margin:0;font-size:12px;color:var(--ink-soft)}
 @media (max-width:640px){.recbar{padding:10px 12px}.recbar-name{width:9ch}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* Obsidian / gold */
+:root,:root[data-theme="dark"],.app[data-mode="detox"]{color-scheme:dark;--page:#0c0e11;--paper:#15181d;--field:#1c2027;--ink:#f1eee7;--ink-soft:#a8abb3;--rule:#2b3039;--rule-strong:#3b414b;--accent:#d9b975;--accent-ink:#17140e;--mark:#d9b975;--good:#83c8a3;--bad:#e49591;--radius:12px;--shadow:0 14px 35px #0002}
+body{font-family:'Segoe UI',system-ui,sans-serif}.app{padding:38px 28px 70px;background:radial-gradient(ellipse at 85% 0,#d9b9750c,transparent 40%),var(--page)}
+.wrap{max-width:1500px}.eyebrow{color:var(--accent);font-size:11px;letter-spacing:.24em;margin-bottom:14px;font-weight:700}.title{font-size:42px;letter-spacing:-1.8px}.quote{max-width:680px}.quote blockquote{font-size:14px}.quote cite{font-size:11px}.masthead{padding-bottom:18px;border-bottom:1px solid var(--rule)}
+.panel{border:1px solid var(--rule);overflow:hidden}.panel-head{border-bottom:1px solid var(--rule);padding:18px 20px}.panel-head h2{font-size:16px}.recbar{padding:16px 20px}.recbar-icon{background:#d9b75112;border:1px solid #d9b75133;border-radius:12px;padding:12px}.recbar-rank{color:var(--accent)}.recbar-track[hidden]{display:none}.toolbar{margin:20px 0}.act,.iconbtn{transition:background .16s,transform .16s}.act:hover,.iconbtn:hover{background:var(--field);transform:translateY(-1px)}button.act.primary:hover{background:#e9cb8c}.iconbtn{width:34px;height:34px}.modeswitch{border:1px solid var(--rule)}
+.workspace-top{display:grid;grid-template-columns:360px 1fr;gap:18px;margin-top:20px}.workspace-top .panel{margin:0}.cal th,.cal td{border:0}.cal td button{height:38px}.cal td button[aria-current]{background:#d9b97520;border-radius:8px}.cal .empty{background:none!important}
+.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.overview-card{padding:22px;border:1px solid var(--rule);border-radius:14px;background:linear-gradient(130deg,#1d2026,#14171b)}.overview-card .metric-label{color:var(--ink-soft);font-size:12px}.overview-card strong{display:block;font-size:32px;font-weight:600;margin:8px 0 2px;letter-spacing:-1px}.overview-card small{color:var(--ink-soft);font-size:12px}.overview-card:first-child{border-color:#d9b97566}.overview-card:first-child strong{color:var(--accent)}
+.week-body{padding:20px}.week-bars{display:flex;gap:12px;height:105px;align-items:flex-end;margin:16px 0 12px}.week-col{flex:1;text-align:center;font-size:11px;color:var(--ink-soft)}.week-col button{display:block;width:100%;height:72px;border:0;background:#ffffff04;border-radius:7px;position:relative;overflow:hidden;cursor:pointer}.week-col i{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(#ddc28a,#907644);min-height:0}.week-col button:hover{outline:1px solid var(--accent)}.week-col span{display:block;margin-top:5px}.week-summary{display:flex;gap:20px;flex-wrap:wrap;color:var(--ink-soft);font-size:13px}.week-summary b{color:var(--ink)}
+.filters{display:flex;gap:16px;align-items:center;padding:15px 20px;border-bottom:1px solid var(--rule);flex-wrap:wrap}.filters input{width:190px}.filters #categoryFilters{display:flex;flex-wrap:wrap;gap:6px}.filter-btn{border:1px solid var(--rule);border-radius:20px;padding:6px 10px;font:inherit;font-size:12px;background:transparent;color:var(--ink-soft);cursor:pointer}.filter-btn[aria-pressed="true"]{color:var(--accent);border-color:var(--accent);background:#d9b97510}
+.rail{padding:12px 14px}.rail::before{left:0;right:auto;top:10px;bottom:10px;width:3px;height:auto;opacity:1}.rail .emoji{background:var(--field);border-radius:8px;padding:5px}.rail .name{font-size:13px}.catrow td{background:#1c2027;color:var(--catcolor);letter-spacing:.07em;font-size:11px;text-transform:uppercase}td.cell{height:48px}td.cell[aria-pressed="true"]{background:#d9b97508}.dotmark{background:var(--accent);border-radius:5px;width:15px;height:15px;box-shadow:0 0 12px #d9b97518}.gridscroll{max-height:650px}.streakcol button{background:transparent;border:0;color:inherit;cursor:pointer;padding:7px;border-radius:8px}.streakcol button:hover{background:var(--field)}.detail-open{background:transparent;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;padding:0}.rowmeta{display:block;font-size:10px;color:var(--ink-soft);margin-top:3px}.catrow[hidden],tr[hidden]{display:none!important}
+.stats{gap:14px}.stat{border:1px solid var(--rule);border-radius:12px;background:var(--field);padding:18px}.stat .big{color:var(--accent)}.trivia{border-radius:12px;background:#ffffff03;border:1px solid var(--rule);margin:16px;padding:16px}.charts{display:grid;grid-template-columns:1fr 1fr}.chartbox+.chartbox{border-top:0;border-left:1px solid var(--rule)}svg.plot{min-width:350px}svg.plot .path{stroke-width:2.5}.chartbox{padding:20px;min-width:0}.chart-title span{overflow-wrap:anywhere}.chart-title{flex-wrap:wrap}
+dialog{background:var(--paper);color:var(--ink);border:1px solid #d9b97550;border-radius:18px;box-shadow:0 30px 100px #0009;max-width:780px;width:calc(100% - 28px)}dialog::backdrop{background:#06080bc9;backdrop-filter:blur(5px)}input,select,textarea{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--rule);border-radius:8px;padding:8px}input[type="checkbox"],input[type="range"]{accent-color:var(--accent)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.checkline{padding:9px 0}.detail-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.detail-stats .stat{padding:12px}.detail-stats strong{display:block;font-size:25px;color:var(--accent)}.detail-stats small{color:var(--ink-soft)}.miniweek{display:flex;gap:8px;margin:18px 0}.miniweek span{flex:1;text-align:center;background:var(--field);border-radius:8px;padding:10px 2px;font-size:12px}.miniweek .done{background:#d9b97522;color:var(--accent)}.config-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.config-grid label{font-size:12px;color:var(--ink-soft)}.config-grid input,.config-grid select{display:block;width:100%;margin-top:5px}.metric-entry{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0}.metric-entry input{width:120px}.muted{font-size:12px;color:var(--ink-soft)}#savedNote{color:var(--good)}.badge.on{background:#d9b97522;color:var(--accent);border-color:var(--accent)}.empty-filter{padding:20px;color:var(--ink-soft)}
+@media(max-width:1000px){.overview{grid-template-columns:repeat(2,1fr)}.workspace-top{grid-template-columns:300px 1fr}.charts{grid-template-columns:1fr}.chartbox+.chartbox{border-left:0;border-top:1px solid var(--rule)}}
+@media(max-width:650px){.app{padding:22px 12px 50px}.title{font-size:34px}.workspace-top{grid-template-columns:1fr}.overview{gap:8px}.overview-card{padding:15px}.overview-card strong{font-size:27px}.modeswitch{width:100%}.modeswitch button{flex:1;padding:8px;font-size:12px}.recbar-meta{white-space:normal}.config-grid{grid-template-columns:1fr}.detail-stats{gap:6px}.detail-stats strong{font-size:21px}table.grid thead th.corner{min-width:170px;width:170px}.rail{max-width:170px}.manage-item{flex-wrap:wrap}.week-bars{gap:7px}}
+
 </style>
 </head>
 <body>
@@ -272,15 +285,15 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
 
   <header class="masthead">
     <div>
-      <h1 class="title" id="appTitle">Bitácora diaria</h1>
+      <div class="eyebrow">BITÁCORA / PERSONAL</div><h1 class="title" id="appTitle">Bitácora diaria</h1>
       <div class="quote">
         <blockquote id="quoteText"></blockquote>
         <button type="button" class="iconbtn" id="quoteNext" aria-label="Ver otra frase" title="Otra frase">↻</button>
       </div>
     </div>
     <div class="modeswitch" role="group" aria-label="Modo de seguimiento">
-      <button type="button" id="btnBuilder" aria-pressed="true">Hábitos</button>
-      <button type="button" id="btnDetox" aria-pressed="false">Desintoxicación</button>
+      <button type="button" id="btnBuilder" aria-pressed="true">✦ Construir hábitos</button>
+      <button type="button" id="btnDetox" aria-pressed="false">🛡 Reducir hábitos</button>
     </div>
   </header>
 
@@ -301,13 +314,14 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
   </section>
 
   <div class="toolbar">
-    <button class="act" id="btnToday">Ir a hoy</button>
-    <button class="act" id="btnManage">Editar lista</button>
-    <button class="act" id="btnData">Copia de seguridad</button>
+    <button class="act" id="btnToday">＋ Registrar hoy</button>
+    <button class="act" id="btnManage">⚙ Editar lista</button>
+    <button class="act" id="btnData">↗ Respaldo</button>
     <span class="spacer"></span>
-    <span class="saved" id="savedNote"></span>
+    <span class="saved" role="status" aria-live="polite" id="savedNote"></span>
   </div>
 
+  <div id="overview"></div><div class="workspace-top">
   <section class="panel cal" aria-label="Calendario">
     <div class="panel-head">
       <h2>Calendario</h2>
@@ -320,6 +334,7 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
     <div style="padding:12px 14px 16px"><div id="calGrid"></div></div>
   </section>
 
+  <section class="panel focus-panel" id="weekPanel" aria-label="Resumen semanal"></section></div>
   <section class="panel" aria-label="Cuadrícula de hábitos" style="margin-top:18px">
     <div class="panel-head">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
@@ -328,7 +343,7 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
       </div>
       <p id="gridHint">Toca una celda para marcarla. Toca el número del día para abrir el registro completo.</p>
     </div>
-    <div class="gridscroll"><table class="grid" id="habitGrid"></table></div>
+    <div class="filters"><input id="habitSearch" type="search" placeholder="Buscar hábito…" aria-label="Buscar hábito"><div id="categoryFilters"></div></div><div class="gridscroll"><table class="grid" id="habitGrid"></table></div>
   </section>
 
   <section class="panel charts" aria-label="Sueño y entrenamiento" style="margin-top:18px">
@@ -356,6 +371,7 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
 </div>
 </div>
 
+<dialog id="detailDlg"><form method="dialog"><div class="dlg-head"><h3 id="detailTitle"></h3><button class="iconbtn" aria-label="Cerrar">✕</button></div><div class="dlg-body" id="detailBody"></div><div class="dlg-foot"><button class="act primary">Listo</button></div></form></dialog>
 <dialog id="dayDlg">
   <form method="dialog">
     <div class="dlg-head"><h3 id="dayDlgTitle"></h3><button class="iconbtn" value="close" aria-label="Cerrar">✕</button></div>
@@ -407,12 +423,12 @@ textarea{width:100%;min-height:150px;font-family:"IBM Plex Sans Condensed",monos
 
 /* ---------------- model ---------------- */
 var CATS = [
-  {id:"nutri", name:"Nutrición",                 color:"#6B7B32"},
-  {id:"suple", name:"Suplementos y ejercicio",   color:"#E2703A"},
-  {id:"mente", name:"Mente y frío",              color:"#1F7A4D"},
-  {id:"cuida", name:"Cuidado personal",          color:"#1E9BB0"},
-  {id:"orden", name:"Orden y rutina",            color:"#6B4FC9"},
-  {id:"crea",  name:"Creatividad y aprendizaje", color:"#E3A008"}
+  {id:"nutri", name:"Nutrición",                 color:"#9DC78B"},
+  {id:"suple", name:"Suplementos y ejercicio",   color:"#E6A077"},
+  {id:"mente", name:"Mente y frío",              color:"#80C6B9"},
+  {id:"cuida", name:"Cuidado personal",          color:"#81BBDE"},
+  {id:"orden", name:"Orden y rutina",            color:"#B5A1E2"},
+  {id:"crea",  name:"Creatividad y aprendizaje", color:"#DABC75"}
 ];
 var CATMAP = {}; CATS.forEach(function(c){CATMAP[c.id]=c;});
 
@@ -466,7 +482,7 @@ var RANKS = [
   {n:"Maestro",i:"👑",s:6000}
 ];
 
-var SLEEP_MIN=4, SLEEP_MAX=9, TRAIN_MIN=0, TRAIN_MAX=4;
+var SLEEP_MIN=0, SLEEP_MAX=24, TRAIN_MIN=0, TRAIN_MAX=12;
 var MILESTONES=[3,7,14,30,90];
 var MONTHS=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 var DOW=["L","M","M","J","V","S","D"];
@@ -556,28 +572,28 @@ function shiftKey(k,delta){
   return key(d.getFullYear(),d.getMonth(),d.getDate());
 }
 function allLogKeys(){return Object.keys(state.logs).sort();}
-function firstKey(){var ks=allLogKeys();return ks.length?ks[0]:todayKey();}
+function firstKey(){var ks=allLogKeys();return ks.filter(function(k){return k<=todayKey();})[0]||todayKey();}
 
 function walkBack(k,test){
   var n=0,cur=k;
-  while(test(cur)){n++;cur=shiftKey(cur,-1);if(n>4000)break;}
+  while(test(cur)){n++;cur=shiftKey(cur,-1);if(n>50000)break;}
   return n;
 }
 function currentStreakPos(id){
   var t=todayKey();
-  var test=function(k){return !!log(k).h[id];};
+  var test=function(k){return k>=(state.profile.start||"0000") && !!log(k).h[id];};
   if(test(t)) return walkBack(t,test);
   return walkBack(shiftKey(t,-1),test);
 }
 function currentStreakNeg(id){
   var t=todayKey();
-  var test=function(k){return log(k).b[id]==="clean";};
+  var test=function(k){return k>=(state.profile.start||"0000") && log(k).b[id]==="clean";};
   if(test(t)) return walkBack(t,test);
   return walkBack(shiftKey(t,-1),test);
 }
 function longestStreak(test){
   var k=firstKey(),end=todayKey(),best=0,run=0,guard=0;
-  while(k<=end && guard++<4000){
+  while(k<=end && guard++<50000){
     if(test(k)){run++;if(run>best)best=run;}else{run=0;}
     k=shiftKey(k,1);
   }
@@ -591,7 +607,7 @@ function monthKeys(){
 }
 function elapsedMonthKeys(){
   var t=todayKey();
-  return monthKeys().filter(function(k){return k<=t;});
+  return monthKeys().filter(function(k){return k<=t && k>= (state.profile.start||t);});
 }
 
 /* ---------------- render: calendar ---------------- */
@@ -770,17 +786,17 @@ function renderStats(){
                '<div class="bar"><i style="width:'+pct(done,totalCells)+'%"></i></div>');
     html+=stat("Racha más larga",longest+" días",esc(longestName));
     html+=stat("Más constante",best?best.p+"%":"—",best?esc(best.h.name):"Sin datos");
-    html+=stat("El que más se escapa",worst?worst.p+"%":"—",worst?esc(worst.h.name):"Sin datos");
+    html+=stat("Oportunidad de enfoque",worst?worst.p+"%":"—",worst?esc(worst.h.name):"Sin datos");
     html+="</div>";
 
     // trivia for hour-based habits
     var trivia=habits.filter(function(h){return h.hours>0;});
     if(trivia.length){
-      html+='<div class="trivia"><h4 style="margin:0 0 2px;font-size:13px;color:var(--ink-soft)">Horas acumuladas</h4><ul>';
+      html+='<div class="trivia"><h4 style="margin:0 0 2px;font-size:13px;color:var(--ink-soft)">Horas estimadas por marcas</h4><ul>';
       trivia.forEach(function(h){
         var days=allLogKeys().filter(function(k){return log(k).h[h.id];}).length;
         var hours=days*h.hours;
-        html+="<li><b>"+esc(h.name)+":</b> "+hours+" h en total. "+equivalence(h.name,hours)+"</li>";
+        html+="<li><b>"+esc(h.name)+":</b> "+hours+" h estimadas en total. "+equivalence(h.name,hours)+"</li>";
       });
       html+="</ul></div>";
     }
@@ -789,16 +805,17 @@ function renderStats(){
   }else{
     html+='<div class="stats">';
     state.habits.negative.forEach(function(h){
-      var clean=eks.filter(function(k){return log(k).b[h.id]==="clean";}).length;
-      var relapse=eks.filter(function(k){return log(k).b[h.id]==="relapse";}).length;
+      var hks=eligible(h,eks);
+      var clean=hks.filter(function(k){return log(k).b[h.id]==="clean";}).length;
+      var relapse=hks.filter(function(k){return log(k).b[h.id]==="relapse";}).length;
       var cs=currentStreakNeg(h.id);
       var lg=longestStreak(function(k){return log(k).b[h.id]==="clean";});
       var badges='<div class="badges">'+MILESTONES.map(function(m){
         return '<span class="badge'+(lg>=m?" on":"")+'">'+m+" d</span>";
       }).join("")+"</div>";
-      var extra='<div class="bar"><i style="width:'+pct(clean,eks.length)+'%"></i></div>'+badges;
-      html+=stat(esc(h.name),cs+" días limpio",
-                 pct(clean,eks.length)+"% del mes ("+clean+" limpios, "+relapse+" recaídas) · récord "+lg+" d",extra);
+      var extra='<div class="bar"><i style="width:'+pct(clean,hks.length)+'%"></i></div>'+badges;
+      html+=stat(esc(h.name),cs+" días de racha",
+                 pct(clean,hks.length)+"% de días elegibles ("+clean+" cumplidos, "+relapse+" incidencias) · récord "+lg+" d",extra);
     });
     html+="</div>";
     if(!state.habits.negative.length) html+='<div class="trivia">Añade algo a la lista para ver sus rachas.</div>';
@@ -810,18 +827,7 @@ function renderStats(){
 function stat(title,big,sub,extra){
   return '<div class="stat"><h4>'+title+'</h4><div class="big num">'+big+'</div><p>'+sub+'</p>'+(extra||"")+'</div>';
 }
-function equivalence(name,hours){
-  var n=name.toLowerCase();
-  if(n.indexOf("lectura")>=0){
-    var books=(hours/2).toFixed(1);
-    return "Equivale a leer “El principito” unas "+books+" veces (≈2 h cada una).";
-  }
-  if(n.indexOf("idioma")>=0){
-    var goal=600, left=Math.max(0,goal-hours);
-    return "Vas "+pct(hours,goal)+"% hacia las 600 h que suelen bastar para conversar con soltura. Faltan "+left+" h.";
-  }
-  return "Son "+(hours/24).toFixed(1)+" días completos de práctica.";
-}
+function equivalence(name,hours){return "Estimación según la duración configurada; no es tiempo cronometrado.";}
 function sleepBlock(eks){
   var withSleep=eks.filter(function(k){return typeof log(k).sleep==="number";});
   if(withSleep.length<3) return '<div class="trivia">Registra al menos tres noches de sueño para ver la relación entre descanso y constancia.</div>';
@@ -842,11 +848,12 @@ function sleepBlock(eks){
   if(!low.length) txt="Todas las noches registradas llegaron a 6 h o más. Cumpliste el "+rh+"% de tus hábitos en esos días.";
   else if(!high.length) txt="Todas las noches registradas quedaron por debajo de 6 h. Cumpliste el "+rl+"% de tus hábitos.";
   else txt="Durmiendo menos de 6 h cumples el "+rl+"% de tus hábitos ("+low.length+" días). Con 6 h o más, el "+rh+"% ("+high.length+" días). Recaídas: "+relapses(low)+" tras noches cortas frente a "+relapses(high)+" tras noches largas.";
-  return '<div class="trivia"><h4 style="margin:0 0 4px;font-size:13px;color:var(--ink-soft)">Sueño y constancia</h4><p style="margin:0;font-size:14px">'+txt+'</p></div>';
+  return '<div class="trivia"><h4 style="margin:0 0 4px;font-size:13px;color:var(--ink-soft)">Sueño y constancia · asociación, no causalidad</h4><p style="margin:0;font-size:14px">'+txt+'</p></div>';
 }
 
 /* ---------------- day modal ---------------- */
 function openDay(d){
+  if(isFuture(key(view.y,view.m,d))){flash("Los días futuros todavía no se pueden registrar");return;}
   selectedDay=d;
   var k=key(view.y,view.m,d), l=log(k), dlg=document.getElementById("dayDlg");
   document.getElementById("dayDlgTitle").textContent=d+" de "+MONTHS[view.m].toLowerCase()+" de "+view.y;
@@ -878,13 +885,13 @@ function openDay(d){
     });
   });
   if(state.habits.negative.length){
-    html+='<h4 style="margin:18px 0 6px;font-size:14px">Desintoxicación</h4>';
+    html+='<h4 style="margin:18px 0 6px;font-size:14px">Hábitos que quieres reducir</h4>';
     state.habits.negative.forEach(function(h){
       var v=l.b[h.id]||"";
       html+='<div class="checkline"><span class="emoji" aria-hidden="true">'+esc(h.emoji||"⚠️")+'</span>'+
             '<span style="flex:1">'+esc(h.name)+'</span><span class="tri" data-nid="'+h.id+'">'+
-            '<button type="button" data-v="clean" aria-pressed="'+(v==="clean")+'">Limpio</button>'+
-            '<button type="button" data-v="relapse" aria-pressed="'+(v==="relapse")+'">Recaída</button>'+
+            '<button type="button" data-v="clean" aria-pressed="'+(v==="clean")+'">Cumplido</button>'+
+            '<button type="button" data-v="relapse" aria-pressed="'+(v==="relapse")+'">Ocurrió</button>'+
             '<button type="button" data-v="" aria-pressed="'+(v==="")+'">Sin marcar</button></span></div>';
     });
   }
@@ -925,6 +932,8 @@ function openDay(d){
     if(noteTimer) clearTimeout(noteTimer);
     noteTimer=setTimeout(function(){ save(); renderCalendar(); renderProfile(); },500);
   });
+  body.querySelectorAll("[data-hid],.tri").forEach(function(el){var id=el.dataset.hid||el.dataset.nid,h=state.habits.positive.concat(state.habits.negative).find(function(x){return x.id===id;});if(h && k<startFor(h)){if(el.matches("input"))el.disabled=true;else el.querySelectorAll("button").forEach(function(b){b.disabled=true;});}});
+  addDailyMetrics(k,body);
   dlg.showModal();
 }
 
@@ -977,6 +986,7 @@ function renderQuote(){
 function tally(){
   var checks=0,clean=0,days=0;
   Object.keys(state.logs).forEach(function(k){
+    if(k>todayKey())return;
     var l=state.logs[k],c=0;
     state.habits.positive.forEach(function(h){if(l.h[h.id])c++;});
     state.habits.negative.forEach(function(h){if(l.b[h.id]==="clean")clean++;});
@@ -1002,7 +1012,7 @@ function renderProfile(){
     var need=r.next.s-t.score;
     meta=t.score+" puntos · faltan "+need+" para "+r.next.n;
     document.getElementById("rankBar").style.width=
-      Math.max(2,Math.round((t.score-r.cur.s)/(r.next.s-r.cur.s)*100))+"%";
+      Math.max(0,Math.round((t.score-r.cur.s)/(r.next.s-r.cur.s)*100))+"%";
   }else{
     meta=t.score+" puntos · rango máximo alcanzado";
     document.getElementById("rankBar").style.width="100%";
@@ -1019,7 +1029,7 @@ function renderProfile(){
   var el=document.getElementById("profElapsed");
   if(state.profile.start){
     var d=Math.max(0,Math.round((parseKey(todayKey())-parseKey(state.profile.start))/86400000));
-    el.textContent=(state.profile.name?state.profile.name+", llevas ":"Llevas ")+d+(d===1?" día":" días")+" en esto · "+t.checks+" hábitos cumplidos, "+t.clean+" días limpios, "+t.days+" días registrados";
+    el.textContent=(state.profile.name?state.profile.name+", llevas ":"Llevas ")+d+(d===1?" día":" días")+" en esto · "+t.checks+" hábitos cumplidos, "+t.clean+" registros de reducción cumplidos, "+t.days+" días registrados";
   }else el.textContent="";
 }
 
@@ -1034,7 +1044,7 @@ function setMode(m){
   document.getElementById("gridTitle").textContent=m==="builder"?"Hábitos del mes":"Lo que estás dejando";
   document.getElementById("gridHint").textContent=m==="builder"
     ? "Toca una celda para marcarla. Toca el número del día para abrir el registro completo."
-    : "Toca una celda para alternar: limpio → recaída → sin marcar.";
+    : "Toca una celda: cumplido → ocurrió → sin registro. Cada día es una nueva oportunidad.";
   renderAll();
 }
 
@@ -1064,6 +1074,7 @@ document.getElementById("habitGrid").addEventListener("keydown",function(e){
 });
 function toggleCell(cell){
   if(cell.classList.contains("future")) return;
+  undoSnapshot={k:cell.dataset.k,id:cell.dataset.hid||cell.dataset.nid,field:cell.dataset.hid?"h":"b",value:log(cell.dataset.k)[cell.dataset.hid?"h":"b"][cell.dataset.hid||cell.dataset.nid]};
   var k=cell.dataset.k, l=log(k,true);
   if(cell.dataset.hid){
     l.h[cell.dataset.hid]=!l.h[cell.dataset.hid];
@@ -1073,6 +1084,7 @@ function toggleCell(cell){
     if(v==="") l.b[id]="clean"; else if(v==="clean") l.b[id]="relapse"; else delete l.b[id];
   }
   touch();
+  var restored=document.querySelector('td.cell[data-k="'+k+'"]['+(cell.dataset.hid?'data-hid':'data-nid')+'="'+(cell.dataset.hid||cell.dataset.nid)+'"]'); if(restored)restored.focus({preventScroll:true});
 }
 
 ["sleepPlot","trainPlot"].forEach(function(id){
@@ -1092,6 +1104,7 @@ document.getElementById("manageList").addEventListener("click",function(e){
   if(i<0) return;
   var a=btn.dataset.a;
   if(a==="del"){
+    if(!confirm("¿Eliminar este hábito y sus registros? Exporta un respaldo si quieres conservarlos.")) return;
     arr.splice(i,1);
     Object.keys(state.logs).forEach(function(k){delete state.logs[k].h[id];delete state.logs[k].b[id];});
   }else if(a==="up"&&i>0){ arr.splice(i-1,0,arr.splice(i,1)[0]); }
@@ -1112,11 +1125,12 @@ document.getElementById("addHabit").addEventListener("click",function(){
   var input=document.getElementById("newHabitName"), name=input.value.trim();
   if(!name){input.focus();return;}
   var emoEl=document.getElementById("newHabitEmoji"), emo=emoEl.value.trim();
-  if(mode==="builder") state.habits.positive.push({id:uid(),name:name,cat:document.getElementById("newHabitCat").value,emoji:emo||"•",hours:0});
-  else state.habits.negative.push({id:uid(),name:name,emoji:emo||"⚠️"});
+  if(mode==="builder") state.habits.positive.push({id:uid(),created:todayKey(),name:name,cat:document.getElementById("newHabitCat").value,emoji:emo||"•",hours:0});
+  else state.habits.negative.push({id:uid(),created:todayKey(),name:name,emoji:emo||"⚠️"});
   input.value=""; emoEl.value=""; renderManage(); touch();
 });
 document.getElementById("resetAll").addEventListener("click",function(){
+  if(!confirm("¿Restaurar esta lista? Se retirarán los hábitos actuales. Descarga un respaldo antes de continuar.")) return;
   var fresh=freshState();
   if(mode==="builder") state.habits.positive=fresh.habits.positive;
   else state.habits.negative=fresh.habits.negative;
@@ -1124,16 +1138,16 @@ document.getElementById("resetAll").addEventListener("click",function(){
 });
 
 document.getElementById("btnData").addEventListener("click",function(){
-  document.getElementById("dataText").value=JSON.stringify(state,null,2);
+  document.getElementById("dataText").value=window.storageBlocked?(localStorage.getItem(STORE_KEY)||""):JSON.stringify(state,null,2);
   document.getElementById("dataNote").textContent="";
   document.getElementById("dataDlg").showModal();
 });
-document.getElementById("copyData").addEventListener("click",function(){
+document.getElementById("copyData").addEventListener("click",async function(){
   var ta=document.getElementById("dataText");
   ta.select();
   try{
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ta.value);}
-    else{document.execCommand("copy");}
+    if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(ta.value);}
+    else{if(!document.execCommand("copy"))throw Error("copy");}
     document.getElementById("dataNote").textContent="Copiado";
   }catch(e){document.getElementById("dataNote").textContent="Copia el texto manualmente";}
 });
@@ -1152,7 +1166,10 @@ document.getElementById("importData").addEventListener("click",function(){
   try{
     var parsed=JSON.parse(document.getElementById("dataText").value);
     if(!parsed||!parsed.habits||!parsed.logs) throw new Error("shape");
-    state=migrate(parsed); note.textContent="Datos importados"; touch();
+    var imported=migrate(parsed);
+    if(!confirm("¿Reemplazar los datos actuales por este respaldo?")) return;
+    localStorage.setItem("bitacora.before-import",JSON.stringify(state));
+    state=imported; window.storageBlocked=false; undoSnapshot=null; note.textContent="Datos importados"; touch();
   }catch(e){ note.textContent="Ese texto no es un respaldo válido. Revisa que esté completo."; }
 });
 
@@ -1179,6 +1196,119 @@ document.getElementById("profName").addEventListener("input",function(){
 document.getElementById("profStart").addEventListener("change",function(){
   state.profile.start=this.value||todayKey(); save(); renderProfile();
 });
+
+/* v2: local-first metrics, validation and accessible summaries */
+var activeCategory='all', searchTerm='', undoSnapshot=null;
+function validDate(k){return typeof k==='string' && /^\d{4}-\d{2}-\d{2}$/.test(k) && key(parseKey(k).getFullYear(),parseKey(k).getMonth(),parseKey(k).getDate())===k;}
+var migrateBase=migrate;
+migrate=function(s){
+  if(!s||!s.habits||!Array.isArray(s.habits.positive)||!Array.isArray(s.habits.negative)||!s.logs||typeof s.logs!=='object'||Array.isArray(s.logs)) throw Error('Formato inválido');
+  var ids=new Set();
+  s.habits.positive.concat(s.habits.negative).forEach(function(h){
+    if(!h||['__proto__','constructor','prototype'].includes(h.id)||typeof h.name!=='string'||!h.name.trim()||typeof h.id!=='string'||!/^[\w-]{1,100}$/.test(h.id)||ids.has(h.id)) throw Error('Hábito inválido');
+    ids.add(h.id);h.name=h.name.slice(0,200);h.emoji=String(h.emoji||'•').slice(0,20);
+    if(h.metric && (!['min','h','g','ml','km','pag','rep','kcal','PEN'].includes(h.metric.unit)||!Number.isFinite(h.metric.goal)||h.metric.goal<0)) throw Error('Métrica inválida');
+    if(h.created&&!validDate(h.created)) throw Error('Fecha inválida');
+  });
+  s.habits.positive.forEach(function(h){if(!CATMAP[h.cat])h.cat='orden';});
+  Object.keys(s.logs).forEach(function(k){
+    var l=s.logs[k];if(!validDate(k)||!l||typeof l!=='object'||Array.isArray(l))throw Error('Registro inválido');
+    ['h','b','metrics'].forEach(function(f){if(l[f]&&(typeof l[f]!=='object'||Array.isArray(l[f])))throw Error('Registro inválido');});
+    ['sleep','train'].forEach(function(f){if(l[f]!=null&&(!Number.isFinite(l[f])||l[f]<0||l[f]>(f==='sleep'?24:12)))throw Error('Cantidad inválida');});
+    Object.keys(l.h||{}).forEach(function(id){if(typeof l.h[id]!=='boolean')throw Error('Marca inválida');});
+    Object.keys(l.b||{}).forEach(function(id){if(!['clean','relapse'].includes(l.b[id]))throw Error('Estado inválido');});
+    Object.keys(l.metrics||{}).forEach(function(id){if(!Number.isFinite(l.metrics[id])||l.metrics[id]<0)throw Error('Cantidad inválida');});
+  });
+  if(s.profile && (typeof s.profile!=='object'||(s.profile.start&&!validDate(s.profile.start))))throw Error('Perfil inválido');
+  s=migrateBase(s);s.version=2;return s;
+};
+load=function(){
+  try {var raw=localStorage.getItem(STORE_KEY);if(raw)state=migrate(JSON.parse(raw));}
+  catch(e){flash('No se pudo cargar el respaldo local. Exporta los datos antes de continuar.');window.storageBlocked=true;}
+};
+save=function(){
+  if(window.storageBlocked){document.getElementById('savedNote').textContent='Guardado bloqueado: revisa o importa un respaldo válido.';return;}
+  try{state.version=2;localStorage.setItem(STORE_KEY,JSON.stringify(state));flash('✓ Guardado en este navegador');}
+  catch(e){document.getElementById('savedNote').textContent='⚠ No se guardó: exporta un respaldo JSON.';}
+};
+function startFor(h){return h.created||state.profile.start||todayKey();}
+function eligible(h,ks){return ks.filter(function(k){return k>=startFor(h)&&k<=todayKey();});}
+function marked(h,k){return mode==='builder'?!!log(k).h[h.id]:log(k).b[h.id]==='clean';}
+function weekKeys(offset){var t=todayKey(),mon=shiftKey(t,-mondayIndex(parseKey(t).getFullYear(),parseKey(t).getMonth(),parseKey(t).getDate())+(offset||0)*7);return Array.from({length:7},function(_,i){return shiftKey(mon,i);});}
+function units(u){return {min:'min',h:'h',g:'g',ml:'ml',km:'km',pag:'pág.',rep:'rep.',kcal:'kcal',PEN:'S/'}[u]||u;}
+function sumMetric(h,ks){var vals=ks.map(function(k){return (log(k).metrics||{})[h.id];}).filter(Number.isFinite);return {n:vals.length,total:vals.reduce(function(a,b){return a+b;},0)};}
+function fmt(n){return n.toLocaleString('es-PE',{maximumFractionDigits:1});}
+function renderOverview(){
+  var arr=state.habits[mode==='builder'?'positive':'negative'],wk=weekKeys(),today=todayKey();
+  var done=0,possible=0,td=0,max=0;
+  arr.forEach(function(h){var ks=eligible(h,wk);possible+=ks.length;done+=ks.filter(function(k){return marked(h,k);}).length;if(marked(h,today))td++;max=Math.max(max,mode==='builder'?currentStreakPos(h.id):currentStreakNeg(h.id));});
+  var vals=wk.filter(function(k){return k<=today;}).map(function(k){return log(k).sleep;}).filter(Number.isFinite);
+  var cards=[['◉ Tu día',td+' / '+arr.length,'registros positivos hoy'],['↗ Esta semana',pct(done,possible)+'%',done+' de '+possible+' oportunidades hasta hoy'],['🔥 Mejor racha activa',max+' d','de los hábitos de esta sección'],['☾ Descanso semanal',vals.length?fmt(vals.reduce(function(a,b){return a+b;},0)/vals.length)+' h':'—',vals.length+' noches registradas']];
+  document.getElementById('overview').innerHTML='<section class="overview" aria-label="Resumen actual">'+cards.map(function(c){return '<div class="overview-card"><div class="metric-label">'+c[0]+'</div><strong>'+c[1]+'</strong><small>'+c[2]+'</small></div>';}).join('')+'</section>';
+  var train=wk.map(function(k){return log(k).train;}).filter(Number.isFinite),total=train.reduce(function(a,b){return a+b;},0);
+  document.getElementById('weekPanel').innerHTML='<div class="panel-head"><h2>Tu semana, paso a paso</h2><p>'+wk[0].slice(8)+' '+MONTHS[parseKey(wk[0]).getMonth()].slice(0,3)+' — '+wk[6].slice(8)+' '+MONTHS[parseKey(wk[6]).getMonth()].slice(0,3)+'</p></div><div class="week-body"><div class="week-summary"><span>✦ <b>'+done+'</b> avances</span><span>◷ <b>'+fmt(total)+' h</b> de entrenamiento registrado</span></div><div class="week-bars">'+wk.map(function(k,i){var eligibleArr=arr.filter(function(h){return k>=startFor(h);}),d=eligibleArr.filter(function(h){return marked(h,k);}).length;return '<div class="week-col"><button type="button" data-date="'+k+'" '+(isFuture(k)?'disabled':'')+' aria-label="'+k+': '+d+' de '+eligibleArr.length+' registros" title="'+d+' de '+eligibleArr.length+'"><i style="height:'+pct(d,eligibleArr.length)+'%"></i></button><span>'+['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'][i]+'</span></div>';}).join('')+'</div><p class="muted">Lunes a domingo · pulsa una barra para abrir ese día. Un día sin registrar no cuenta como completado.</p></div>';
+}
+var gridBase=renderGrid;
+renderGrid=function(){
+ gridBase();var arr=state.habits[mode==='builder'?'positive':'negative'];
+ var rows=Array.from(document.querySelectorAll('#habitGrid tr')).filter(function(r){return r.querySelector('.rowhead');});
+ rows.forEach(function(row){var cell=row.querySelector('[data-hid],[data-nid]');if(!cell)return;var id=cell.dataset.hid||cell.dataset.nid,h=arr.find(function(x){return x.id===id;});if(!h)return;
+ var ks=eligible(h,elapsedMonthKeys()),count=ks.filter(function(k){return marked(h,k);}).length;
+ var name=row.querySelector('.name');var metric=h.metric?sumMetric(h,weekKeys().filter(function(k){return k<=todayKey();})):null;
+ name.innerHTML='<button class="detail-open" data-detail="'+h.id+'" title="Ver estadísticas y configurar '+esc(h.name)+'">'+esc(h.name)+'<span class="rowmeta">'+count+'/'+ks.length+' este mes'+(metric?' · '+(metric.n?fmt(metric.total)+' '+esc(units(h.metric.unit)):'sin cantidades')+' / sem.':' · ver detalle ↗')+'</span></button>';
+ var st=row.querySelector('td.streakcol');st.innerHTML='<button data-detail="'+h.id+'" aria-label="Ver racha de '+esc(h.name)+'">'+st.innerHTML+'</button>';
+ row.hidden=(mode==='builder'&&activeCategory!=='all'&&h.cat!==activeCategory)||!h.name.toLocaleLowerCase('es').includes(searchTerm);
+ row.querySelectorAll('td.cell').forEach(function(c){var unavailable=isFuture(c.dataset.k)||c.dataset.k<startFor(h);if(unavailable){c.classList.add('future');c.setAttribute('aria-disabled','true');c.tabIndex=-1;}if(c.dataset.nid)c.setAttribute('aria-label',h.name+' '+c.dataset.k+': '+({clean:'objetivo cumplido',relapse:'ocurrió'}[log(c.dataset.k).b[h.id]]||'sin registro'));});
+ });
+ document.querySelectorAll('#habitGrid .catrow').forEach(function(r){var next=r.nextElementSibling,visible=false;while(next&&!next.classList.contains('catrow')){if(!next.hidden)visible=true;next=next.nextElementSibling;}r.hidden=!visible;});
+ if(rows.length&&!rows.some(function(r){return !r.hidden;})){var tr=document.createElement('tr');tr.innerHTML='<td colspan="'+(daysInMonth(view.y,view.m)+2)+'" class="empty-filter">No hay hábitos con estos filtros.</td>';document.querySelector('#habitGrid tbody').appendChild(tr);}
+ document.getElementById('categoryFilters').innerHTML=[{id:'all',name:'Todos',color:'#d9b975'}].concat(mode==='builder'?CATS:[]).map(function(c){return '<button class="filter-btn" data-cat="'+c.id+'" aria-pressed="'+(activeCategory===c.id)+'"><span style="color:'+c.color+'">●</span> '+esc(c.name)+'</button>';}).join('');
+ renderOverview();
+};
+function openDetail(id){
+ var h=state.habits.positive.concat(state.habits.negative).find(function(x){return x.id===id;});if(!h)return;
+ var positive=state.habits.positive.includes(h),test=function(k){return k>=startFor(h)&&(positive?!!log(k).h[id]:log(k).b[id]==='clean');};
+ var ks=eligible(h,elapsedMonthKeys()),n=ks.filter(test).length,record=longestStreak(test),current=positive?currentStreakPos(id):currentStreakNeg(id),m=h.metric||{label:'',unit:'min',goal:0},sum=sumMetric(h,weekKeys().filter(function(k){return k<=todayKey();}));
+ document.getElementById('detailTitle').textContent=(h.emoji||'✦')+' '+h.name;
+ document.getElementById('detailBody').innerHTML='<div class="detail-stats"><div class="stat"><small>🔥 Racha actual</small><strong>'+current+' d</strong></div><div class="stat"><small>🏆 Récord histórico</small><strong>'+record+' d</strong></div><div class="stat"><small>◉ Mes visible</small><strong>'+pct(n,ks.length)+'%</strong></div></div><div class="miniweek">'+weekKeys().map(function(k,i){return '<span class="'+(test(k)?'done':'')+'">'+DOW[i]+'<br>'+(test(k)?'✓':isFuture(k)?'·':'—')+'</span>';}).join('')+'</div><div class="badges">'+MILESTONES.map(function(v){return '<span class="badge '+(record>=v?'on':'')+'" title="Récord de '+v+' días">'+(record>=v?'◆':'◇')+' '+v+' días</span>';}).join('')+'</div><h4>Una métrica para este hábito</h4><p class="muted">Registra cantidades reales desde el diario. La cantidad y la marca de cumplimiento son independientes. Deja el nombre vacío para desactivar la métrica sin borrar sus registros.</p><div class="config-grid"><label>Nombre de la métrica<input id="metricLabel" maxlength="60" placeholder="Ej. Carbohidratos consumidos" value="'+esc(m.label)+'"></label><label>Unidad<select id="metricUnit">'+['min','h','g','ml','km','pag','rep','kcal','PEN'].map(function(u){return '<option value="'+u+'" '+(u===m.unit?'selected':'')+'>'+units(u)+'</option>';}).join('')+'</select></label><label>Meta semanal (0 = sin meta)<input id="metricGoal" type="number" min="0" max="10000000" step="any" value="'+m.goal+'"></label><label>Horas estimadas por marca<input id="sessionHours" type="number" min="0" max="24" step="0.25" value="'+(h.hours||0)+'"></label></div><p class="muted">La meta es una referencia personal de acumulación, no una recomendación de consumo. No se estima pérdida de grasa ni de carbohidratos.</p><button class="act primary" type="button" id="saveMetric">Guardar configuración</button><p id="metricStatus" role="status" class="muted"></p>'+(h.metric?'<div class="trivia"><b>'+esc(m.label)+': '+(sum.n?fmt(sum.total)+' '+units(m.unit):'sin registros')+'</b><p class="muted">'+sum.n+' días con cantidades esta semana'+(m.goal?' · referencia semanal '+fmt(m.goal)+' '+units(m.unit):'')+'</p>'+(m.goal?'<div class="bar"><i style="width:'+Math.min(100,pct(sum.total,m.goal))+'%"></i></div>':'')+'</div>':'');
+ document.getElementById('saveMetric').onclick=function(){var label=document.getElementById('metricLabel').value.trim(),goal=document.getElementById('metricGoal'),hours=document.getElementById('sessionHours');if(!goal.reportValidity()||!hours.reportValidity())return;if(h.metric&&h.metric.unit!==document.getElementById('metricUnit').value&&allLogKeys().some(function(k){return Number.isFinite((log(k).metrics||{})[h.id]);})&&!confirm('Cambiar la unidad no convierte las cantidades anteriores. ¿Continuar?'))return;h.hours=Number(hours.value);if(label)h.metric={label:label,unit:document.getElementById('metricUnit').value,goal:Number(goal.value)};else delete h.metric;touch();document.getElementById('metricStatus').textContent='✓ Configuración guardada. Abre Registrar hoy para introducir cantidades.';};
+ document.getElementById('detailDlg').showModal();
+}
+function addDailyMetrics(k,body){
+ var habits=state.habits.positive.concat(state.habits.negative).filter(function(h){return h.metric&&k>=startFor(h);});
+ if(!habits.length)return;
+ var section=document.createElement('section');section.innerHTML='<h4>◷ Cantidades del día</h4><p class="muted">Vacío = sin registro. Cero = cantidad registrada de 0.</p>'+habits.map(function(h){var v=(log(k).metrics||{})[h.id];return '<label class="metric-entry"><span>'+esc(h.emoji)+' '+esc(h.metric.label)+' <small class="muted">('+esc(h.name)+') · '+units(h.metric.unit)+'</small></span><input type="number" min="0" max="10000000" step="any" data-metric="'+h.id+'" value="'+(Number.isFinite(v)?v:'')+'" placeholder="—"></label>';}).join('');
+ body.insertBefore(section,body.querySelector('#noteIn').previousElementSibling);
+ section.addEventListener('change',function(e){var el=e.target;if(!el.dataset.metric)return;if(!el.reportValidity())return;var l=log(k,true);l.metrics=l.metrics||{};if(el.value==='')delete l.metrics[el.dataset.metric];else l.metrics[el.dataset.metric]=Number(el.value);touch();});
+}
+var statsBase=renderStats;
+renderStats=function(){statsBase();var arr=state.habits[mode==='builder'?'positive':'negative'],area=document.getElementById('statsArea');if(mode==='builder'){
+ var total=0,done=0,rank=[];arr.forEach(function(h){var ks=eligible(h,elapsedMonthKeys()),d=ks.filter(function(k){return !!log(k).h[h.id];}).length;total+=ks.length;done+=d;rank.push({h:h,p:pct(d,ks.length),n:ks.length});});rank=rank.filter(function(r){return r.n;}).sort(function(a,b){return b.p-a.p;});
+ var cards=area.querySelectorAll('.stats .stat');if(cards.length){cards[0].outerHTML=stat('Cumplimiento del mes',pct(done,total)+'%',done+' de '+total+' oportunidades desde tu fecha de inicio','<div class="bar"><i style="width:'+pct(done,total)+'%"></i></div>');cards[2].outerHTML=stat('Más constante',rank.length?rank[0].p+'%':'—',rank.length?esc(rank[0].h.name):'Sin días elegibles');cards[3].outerHTML=stat('Oportunidad de enfoque',rank.length?rank[rank.length-1].p+'%':'—',rank.length?esc(rank[rank.length-1].h.name):'Sin días elegibles');}
+ }
+ document.getElementById('statsHint').textContent='Mes visible · desde la fecha de inicio. Las rachas son actuales y los récords históricos.';
+ var configured=arr.filter(function(h){return h.metric;});if(configured.length){var el=document.createElement('div');el.className='trivia';el.innerHTML='<h4 style="margin:0 0 12px">◷ Cantidades · semana actual</h4>'+configured.map(function(h){var s=sumMetric(h,weekKeys().filter(function(k){return k<=todayKey();}));return '<p><b>'+esc(h.metric.label)+'</b> · '+(s.n?fmt(s.total)+' '+units(h.metric.unit):'Sin registros')+' <small class="muted">/ '+s.n+' días registrados · '+esc(h.name)+'</small></p>';}).join('');area.appendChild(el);}
+};
+// Keep gaps in the plot instead of interpolating missing days.
+var plotBase=renderPlot;
+renderPlot=function(id,field,min,max,step,unit){var vals=monthKeys().map(function(k){return log(k)[field];}).filter(Number.isFinite),upper=Math.max(field==='sleep'?10:2,Math.ceil(Math.max(0,...vals)));plotBase(id,field,0,upper,upper>12?4:upper>6?2:1,unit);var svg=document.getElementById(id),p=svg.querySelector('.path');if(p){var n=daysInMonth(view.y,view.m),path='',previous=false;monthKeys().forEach(function(k,i){var v=log(k)[field];if(Number.isFinite(v)){path+=(previous?'L':'M')+(26+(606/n)*(i+.5)).toFixed(1)+' '+(10+104-(v/upper)*104).toFixed(1)+' ';previous=true;}else previous=false;});p.setAttribute('d',path);}svg.querySelectorAll('rect.hit').forEach(function(r){var k=key(view.y,view.m,+r.dataset.day),v=log(k)[field];r.querySelector('title').textContent=k+': '+(Number.isFinite(v)?v+' h':'sin registro');});};
+var quoteBase=renderQuote;
+renderQuote=function(){document.getElementById('quoteText').innerHTML='Tu progreso, a tu ritmo. Cada registro es una oportunidad para conocerte mejor.';};
+document.getElementById('quoteNext').style.display='none';
+document.getElementById('habitSearch').addEventListener('input',function(){searchTerm=this.value.toLocaleLowerCase('es').trim();renderGrid();});
+document.getElementById('categoryFilters').addEventListener('click',function(e){var b=e.target.closest('[data-cat]');if(b){activeCategory=b.dataset.cat;renderGrid();}});
+document.getElementById('habitGrid').addEventListener('click',function(e){var b=e.target.closest('[data-detail]');if(b)openDetail(b.dataset.detail);});
+document.getElementById('weekPanel').addEventListener('click',function(e){var b=e.target.closest('[data-date]');if(!b)return;var d=parseKey(b.dataset.date);view.y=d.getFullYear();view.m=d.getMonth();renderAll();openDay(d.getDate());});
+var modeBase=setMode;
+setMode=function(m){activeCategory='all';modeBase(m);document.getElementById('appTitle').textContent=m==='builder'?'Pequeños pasos. Grandes cambios.':'Más espacio para ti.';document.getElementById('gridTitle').textContent=m==='builder'?'Tu mapa de hábitos':'Hábitos que quieres reducir';};
+var undoButton=document.createElement('button');undoButton.type='button';undoButton.className='act';undoButton.textContent='↶ Deshacer marca';undoButton.onclick=function(){if(!undoSnapshot){flash('No hay una marca que deshacer');return;}var u=undoSnapshot,l=log(u.k,true);if(u.value===undefined)delete l[u.field][u.id];else l[u.field][u.id]=u.value;undoSnapshot=null;touch();};document.querySelector('.toolbar').insertBefore(undoButton,document.querySelector('.toolbar .spacer'));
+// Validate the profile date and prevent future start dates.
+document.getElementById('profStart').max=todayKey();
+document.getElementById('profStart').addEventListener('change',function(){if(!validDate(this.value)||this.value>todayKey()){state.profile.start=todayKey();this.value=todayKey();}touch();});
+document.getElementById('profName').setAttribute('aria-label','Tu nombre');
+window.addEventListener('pagehide',function(){if(!window.storageBlocked){try{localStorage.setItem(STORE_KEY,JSON.stringify(state));}catch(e){}}});
+// File imports use the same validated import action as pasted JSON.
+var fileIn=document.createElement('input');fileIn.type='file';fileIn.accept='.json,application/json';fileIn.setAttribute('aria-label','Abrir archivo de respaldo JSON');document.querySelector('#dataDlg .dlg-body').prepend(fileIn);fileIn.onchange=async function(){if(!fileIn.files[0])return;if(fileIn.files[0].size>10000000){document.getElementById('dataNote').textContent='El archivo supera 10 MB.';return;}document.getElementById('dataText').value=await fileIn.files[0].text();};
 
 load();
 renderQuote();
